@@ -1,0 +1,65 @@
+<dirs>
+    <dir_sources>shaders_src</dir_sources>
+    <dir_d3d11>shaders_bin</dir_d3d11>
+    <dir_d3d12>shaders_bin/dx12</dir_d3d12>
+    <dir_vk>shaders_bin/vk</dir_vk>
+</dirs>
+
+<options>
+    <enableDebugInfo>true</enableDebugInfo>
+    <packMatricesInRowMajor>false</packMatricesInRowMajor>
+    <enable16bitTypes_hlsl_6_2>false</enable16bitTypes_hlsl_6_2>
+    <OptionsCompile_Dxil>true</OptionsCompile_Dxil>
+    <OptionsCompile_SpirV>true</OptionsCompile_SpirV>
+    <OptionsCompile_Hlsl>true</OptionsCompile_Hlsl>
+    <optimizationLevel>-1</optimizationLevel>
+    <shiftAllCBuffersBindings_vk>0</shiftAllCBuffersBindings_vk>
+    <shiftAllUABuffersBindings_vk>0</shiftAllUABuffersBindings_vk>
+    <shiftAllSamplersBindings_vk>0</shiftAllSamplersBindings_vk>
+    <shiftAllTexturesBindings_vk>0</shiftAllTexturesBindings_vk>
+</options>
+
+<shaderlist>
+    <shader>
+        <name>quad_vs</name>
+        <namefile>Quad.hlsl</namefile>
+        <entry>VS</entry>
+        <hlslversion>vs_5_0</hlslversion>
+        <defines>
+            <define name="exampledefine" value="1"/>
+            <define name="exampledefinenoarg"/>
+        </defines>
+        <is_prev_bad_compile>false</is_prev_bad_compile>
+        <is_force_recompile>false</is_force_recompile>
+    </shader>
+    <shader>
+        <name>quad_ps</name>
+        <namefile>Quad.hlsl</namefile>
+        <entry>PS</entry>
+        <hlslversion>ps_5_0</hlslversion>
+        <defines/>
+        <is_prev_bad_compile>false</is_prev_bad_compile>
+        <is_force_recompile>false</is_force_recompile>
+    </shader>
+    <shader>
+        <name>imgui_vs</name>
+        <namefile>ImGui.hlsl</namefile>
+        <entry>VS</entry>
+        <hlslversion>vs_5_0</hlslversion>
+        <defines>
+            <define name="exampledefine" value="1"/>
+            <define name="exampledefinenoarg"/>
+        </defines>
+        <is_prev_bad_compile>false</is_prev_bad_compile>
+        <is_force_recompile>false</is_force_recompile>
+    </shader>
+    <shader>
+        <name>imgui_ps</name>
+        <namefile>ImGui.hlsl</namefile>
+        <entry>PS</entry>
+        <hlslversion>ps_5_0</hlslversion>
+        <defines/>
+        <is_prev_bad_compile>false</is_prev_bad_compile>
+        <is_force_recompile>false</is_force_recompile>
+    </shader>
+</shaderlist>
